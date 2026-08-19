@@ -18,7 +18,6 @@ Pixel values range from 0 to 255
 Each image is converted into 784 input features for the neural network.
 
 ## The dataset is loaded using TensorFlow/Keras:
-
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 🛠️ Technologies Used
 Python
@@ -103,7 +102,6 @@ Validation Accuracy
 Training Time
 
 ## 📈 Model Results
-
 Model	Hidden Layers	Activation	Epochs	Batch Size	Train Accuracy	Validation Accuracy
 Baseline	0	-	10	50000	15.27%	16.28%
 Model 1	0	-	50	50000	43.06%	43.32%
@@ -145,6 +143,5 @@ Increasing model depth and epochs can increase training accuracy but may also le
 The deeper models achieved very high training accuracy, while validation accuracy remained around 97%.
 
 ## ✅ Conclusion
-
 The experiment shows that SGD, smaller batch sizes, hidden layers, and suitable activation functions can significantly improve MNIST digit classification. ReLU and Tanh performed better than Sigmoid, and increasing epochs improved training accuracy but could cause overfitting. Overall, the deeper neural network models performed much better than the baseline model.
 
